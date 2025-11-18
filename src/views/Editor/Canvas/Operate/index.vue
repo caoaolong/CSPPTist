@@ -85,6 +85,7 @@ const currentOperateComponent = computed<unknown>(() => {
     [ElementTypes.TABLE]: TableElementOperate,
     [ElementTypes.CHART]: CommonElementOperate,
     [ElementTypes.LATEX]: CommonElementOperate,
+    [ElementTypes.LATEX_TEXT]: TextElementOperate,
     [ElementTypes.VIDEO]: CommonElementOperate,
     [ElementTypes.AUDIO]: CommonElementOperate,
   }

@@ -20,6 +20,7 @@ import { ElementTypes, type PPTElement } from '@/types/slides'
 
 import BaseImageElement from '@/views/components/element/ImageElement/BaseImageElement.vue'
 import BaseTextElement from '@/views/components/element/TextElement/BaseTextElement.vue'
+import BaseLatexTextElement from '@/views/components/element/LatexTextElement/BaseLatexTextElement.vue'
 import BaseShapeElement from '@/views/components/element/ShapeElement/BaseShapeElement.vue'
 import BaseLineElement from '@/views/components/element/LineElement/BaseLineElement.vue'
 import BaseChartElement from '@/views/components/element/ChartElement/BaseChartElement.vue'
@@ -44,6 +45,7 @@ const currentElementComponent = computed<unknown>(() => {
     [ElementTypes.LATEX]: BaseLatexElement,
     [ElementTypes.VIDEO]: BaseVideoElement,
     [ElementTypes.AUDIO]: BaseAudioElement,
+    [ElementTypes.LATEX_TEXT]: BaseLatexTextElement,
   }
   return elementTypeMap[props.elementInfo.type] || null
 })

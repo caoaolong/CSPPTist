@@ -28,6 +28,7 @@ const panelMap = {
   [ElementTypes.CHART]: ChartStylePanel,
   [ElementTypes.TABLE]: TableStylePanel,
   [ElementTypes.LATEX]: LatexStylePanel,
+  [ElementTypes.LATEX_TEXT]: TextStylePanel,
   [ElementTypes.VIDEO]: VideoStylePanel,
   [ElementTypes.AUDIO]: AudioStylePanel,
 }

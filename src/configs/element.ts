@@ -8,6 +8,7 @@ export const ELEMENT_TYPE_ZH: { [key: string]: string } = {
   video: '视频',
   audio: '音频',
   latex: '公式',
+  latexText: '公式文本',
 }
 
 export const MIN_SIZE: { [key: string]: number } = {
@@ -19,4 +20,5 @@ export const MIN_SIZE: { [key: string]: number } = {
   video: 250,
   audio: 20,
   latex: 20,
+  latexText: 40,
 }

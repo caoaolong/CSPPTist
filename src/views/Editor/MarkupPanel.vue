@@ -18,7 +18,7 @@
           :options="slideTypeOptions"
         />
       </div>
-      <div class="row" v-if="handleElement && (handleElement.type === 'text' || (handleElement.type === 'shape' && handleElement.text))">
+      <div class="row" v-if="handleElement && (handleElement.type === 'text' || handleElement.type === 'latexText' || (handleElement.type === 'shape' && handleElement.text))">
         <div style="width: 40%;">当前文本类型：</div>
         <Select
           style="width: 60%;"
@@ -88,7 +88,7 @@ const imageTypeOptions = ref<{ label: string; value: ImageType | '' }[]>([
 const slideType = computed(() => currentSlide.value?.type || '')
 const textType = computed(() => {
   if (!handleElement.value) return ''
-  if (handleElement.value.type === 'text') return handleElement.value.textType || ''
+  if (handleElement.value.type === 'text' || handleElement.value.type === 'latexText') return handleElement.value.textType || ''
   if (handleElement.value.type === 'shape' && handleElement.value.text) return handleElement.value.text.type || ''
   return ''
 })
@@ -121,7 +121,7 @@ const updateElement = (type: TextType | ImageType | '') => {
       })
     }
   }
-  if (handleElement.value.type === 'text') {
+  if (handleElement.value.type === 'text' || handleElement.value.type === 'latexText') {
     if (type) {
       slidesStore.updateElement({ id: handleElementId.value, props: { textType: type as TextType } })
     }

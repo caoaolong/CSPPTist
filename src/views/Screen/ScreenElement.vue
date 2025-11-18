@@ -32,6 +32,7 @@ import BaseLineElement from '@/views/components/element/LineElement/BaseLineElem
 import BaseChartElement from '@/views/components/element/ChartElement/BaseChartElement.vue'
 import BaseTableElement from '@/views/components/element/TableElement/BaseTableElement.vue'
 import BaseLatexElement from '@/views/components/element/LatexElement/BaseLatexElement.vue'
+import BaseLatexTextElement from '@/views/components/element/LatexTextElement/BaseLatexTextElement.vue'
 import ScreenVideoElement from '@/views/components/element/VideoElement/ScreenVideoElement.vue'
 import ScreenAudioElement from '@/views/components/element/AudioElement/ScreenAudioElement.vue'
 
@@ -52,6 +53,7 @@ const currentElementComponent = computed<unknown>(() => {
     [ElementTypes.CHART]: BaseChartElement,
     [ElementTypes.TABLE]: BaseTableElement,
     [ElementTypes.LATEX]: BaseLatexElement,
+    [ElementTypes.LATEX_TEXT]: BaseLatexTextElement,
     [ElementTypes.VIDEO]: ScreenVideoElement,
     [ElementTypes.AUDIO]: ScreenAudioElement,
   }

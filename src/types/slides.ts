@@ -30,6 +30,7 @@ export const enum ElementTypes {
   LATEX = 'latex',
   VIDEO = 'video',
   AUDIO = 'audio',
+  LATEX_TEXT = 'latexText',
 }
 
 /**
@@ -186,6 +187,51 @@ export interface PPTTextElement extends PPTBaseElement {
   textType?: TextType
 }
 
+/**
+ * Latex和文本混排元素
+ * 
+ * type: 元素类型（latexText）
+ * 
+ * content: 文本内容（HTML字符串）
+ * 
+ * defaultFontName: 默认字体（会被文本内容中的HTML内联样式覆盖）
+ * 
+ * defaultColor: 默认颜色（会被文本内容中的HTML内联样式覆盖）
+ * 
+ * outline?: 边框
+ * 
+ * fill?: 填充色
+ * 
+ * lineHeight?: 行高（倍），默认1.5
+ * 
+ * wordSpace?: 字间距，默认0
+ * 
+ * opacity?: 不透明度，默认1
+ * 
+ * shadow?: 阴影
+ * 
+ * paragraphSpace?: 段间距，默认 5px
+ * 
+ * vertical?: 竖向文本
+ * 
+ * textType?: 文本类型
+ */
+export interface PPTLatexTextElement extends PPTBaseElement {
+  type: 'latexText'
+  content: string
+  defaultFontName: string
+  defaultColor: string
+  outline?: PPTElementOutline
+  fill?: string
+  lineHeight?: number
+  wordSpace?: number
+  opacity?: number
+  shadow?: PPTElementShadow
+  paragraphSpace?: number
+  vertical?: boolean
+  textType?: TextType
+}
+
 
 /**
  * 图片翻转、形状翻转
@@ -278,6 +324,7 @@ export interface PPTImageElement extends PPTBaseElement {
   type: 'image'
   fixedRatio: boolean
   src: string
+  latex?: string
   outline?: PPTElementOutline
   filters?: ImageElementFilters
   clip?: ImageElementClip
@@ -636,7 +683,7 @@ export interface PPTAudioElement extends PPTBaseElement {
 }
 
 
-export type PPTElement = PPTTextElement | PPTImageElement | PPTShapeElement | PPTLineElement | PPTChartElement | PPTTableElement | PPTLatexElement | PPTVideoElement | PPTAudioElement
+export type PPTElement = PPTTextElement | PPTImageElement | PPTShapeElement | PPTLineElement | PPTChartElement | PPTTableElement | PPTLatexElement | PPTVideoElement | PPTAudioElement | PPTLatexTextElement
 
 export type AnimationType = 'in' | 'out' | 'attention'
 export type AnimationTrigger = 'click' | 'meantime' | 'auto'

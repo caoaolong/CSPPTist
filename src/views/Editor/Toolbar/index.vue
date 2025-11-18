@@ -53,7 +53,6 @@ const currentTabs = computed(() => {
   if (!activeElementIdList.value.length) return slideTabs
   else if (activeElementIdList.value.length > 1) {
     if (!activeGroupElementId.value) return multiSelectTabs
-
     const activeGroupElement = activeElementList.value.find(item => item.id === activeGroupElementId.value)
     if (activeGroupElement) return elementTabs
     return multiSelectTabs

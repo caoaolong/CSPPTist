@@ -1,5 +1,6 @@
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
+import VueLatex from 'vatex'
 import App from './App.vue'
 
 import '@icon-park/vue-next/styles/index.css'
@@ -16,4 +17,5 @@ const app = createApp(App)
 app.use(Icon)
 app.use(Directive)
 app.use(createPinia())
+app.use(VueLatex)
 app.mount('#app')

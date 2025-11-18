@@ -184,7 +184,7 @@ const activeTab = ref('common')
 
 const textPropsEnable = computed(() => {
   if (!handleElement.value) return false
-  if (handleElement.value.type === 'text') return true
+  if (handleElement.value.type === 'text' || handleElement.value.type === 'latexText') return true
   if (handleElement.value.type === 'shape' && handleElement.value.text?.content) return true
 
   return false
@@ -194,6 +194,7 @@ const textColorPropsEnable = computed(() => {
   if (!handleElement.value) return false
   if (
     handleElement.value.type === 'text' ||
+    handleElement.value.type === 'latexText' ||
     handleElement.value.type === 'table' ||
     handleElement.value.type === 'latex'
   ) return true
@@ -207,6 +208,7 @@ const fillPropsEnable = computed(() => {
   if (!handleElement.value) return false
   if (
     handleElement.value.type === 'text' ||
+    handleElement.value.type === 'latexText' ||
     handleElement.value.type === 'shape' ||
     handleElement.value.type === 'chart' ||
     handleElement.value.type === 'table' ||
@@ -233,7 +235,7 @@ const emitRichTextCommand = (command: string, value?: string) => {
 
 const updateFontColor = (color: string) => {
   if (!handleElement.value) return
-  if (handleElement.value.type === 'text' || (handleElement.value.type === 'shape' && handleElement.value.text?.content)) {
+  if (handleElement.value.type === 'text' || handleElement.value.type === 'latexText' || (handleElement.value.type === 'shape' && handleElement.value.text?.content)) {
     emitter.emit(EmitterEvents.RICH_TEXT_COMMAND, { action: { command: 'color', value: color } })
   }
   if (handleElement.value.type === 'table') {
@@ -255,6 +257,7 @@ const updateFill = (color: string) => {
   if (!handleElement.value) return
   if (
     handleElement.value.type === 'text' ||
+    handleElement.value.type === 'latexText' ||
     handleElement.value.type === 'shape' ||
     handleElement.value.type === 'chart'
   ) updateElement(handleElementId.value, { fill: color })

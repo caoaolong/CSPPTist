@@ -145,10 +145,10 @@ const minSize = computed(() => {
 })
 
 const isHorizontalText = computed(() => {
-  return handleElement.value?.type === 'text' && !handleElement.value.vertical
+  return (handleElement.value?.type === 'text' || handleElement.value?.type === 'latexText') && !handleElement.value.vertical
 })
 const isVerticalText = computed(() => {
-  return handleElement.value?.type === 'text' && handleElement.value.vertical
+  return (handleElement.value?.type === 'text' || handleElement.value?.type === 'latexText') && handleElement.value.vertical
 })
 
 watch(handleElement, () => {

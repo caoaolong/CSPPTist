@@ -8,11 +8,7 @@
         <div class="preview">
           <div class="placeholder" v-if="!latex">公式预览</div>
           <div class="preview-content" v-else>
-            <FormulaContent
-              :width="518"
-              :height="138"
-              :latex="latex"
-            />
+            <vue-latex :expression="latex" :fontsize="24" />
           </div>
         </div>
       </div>
@@ -40,11 +36,12 @@
             <div class="formula-item" v-for="item in formulaList" :key="item.label">
               <div class="formula-title">{{item.label}}</div>
               <div class="formula-item-content" @click="latex = item.latex">
-                <FormulaContent
+                <!-- <FormulaContent
                   :width="236"
                   :height="60"
                   :latex="item.latex"
-                />
+                /> -->
+                <vue-latex :expression="item.latex" :fontsize="8" />
               </div>
             </div>
           </div>
@@ -64,7 +61,7 @@ import { hfmath } from './hfmath'
 import { FORMULA_LIST, SYMBOL_LIST } from '@/configs/latex'
 import message from '@/utils/message'
 
-import FormulaContent from './FormulaContent.vue'
+// import FormulaContent from './FormulaContent.vue'
 import SymbolContent from './SymbolContent.vue'
 import Button from '../Button.vue'
 import TextArea from '../TextArea.vue'

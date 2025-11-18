@@ -183,6 +183,7 @@ const updateFill = (value: string) => {
   for (const el of activeElementList.value) {
     if (
       el.type === 'text' ||
+      el.type === 'latexText' ||
       el.type === 'shape' ||
       el.type === 'chart'
     ) updateElement(el.id, { fill: value })
@@ -209,6 +210,7 @@ const updateOutline = (outlineProps: Partial<PPTElementOutline>) => {
   for (const el of activeElementList.value) {
     if (
       el.type === 'text' ||
+      el.type === 'latexText' ||
       el.type === 'image' ||
       el.type === 'shape' ||
       el.type === 'table' ||
@@ -227,7 +229,7 @@ const updateOutline = (outlineProps: Partial<PPTElementOutline>) => {
 // 修改文字样式
 const updateFontStyle = (command: string, value: string) => {
   for (const el of activeElementList.value) {
-    if (el.type === 'text' || (el.type === 'shape' && el.text?.content)) {
+    if (el.type === 'text' || el.type === 'latexText' || (el.type === 'shape' && el.text?.content)) {
       emitter.emit(EmitterEvents.RICH_TEXT_COMMAND, { target: el.id, action: { command, value } })
     }
     if (el.type === 'table') {

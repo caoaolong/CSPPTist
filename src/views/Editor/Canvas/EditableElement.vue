@@ -33,6 +33,7 @@ import { ElementOrderCommands, ElementAlignCommands } from '@/types/edit'
 
 import ImageElement from '@/views/components/element/ImageElement/index.vue'
 import TextElement from '@/views/components/element/TextElement/index.vue'
+import LatexTextElement from '@/views/components/element/LatexTextElement/index.vue'
 import ShapeElement from '@/views/components/element/ShapeElement/index.vue'
 import LineElement from '@/views/components/element/LineElement/index.vue'
 import ChartElement from '@/views/components/element/ChartElement/index.vue'
@@ -60,6 +61,7 @@ const currentElementComponent = computed<unknown>(() => {
     [ElementTypes.LATEX]: LatexElement,
     [ElementTypes.VIDEO]: VideoElement,
     [ElementTypes.AUDIO]: AudioElement,
+    [ElementTypes.LATEX_TEXT]: LatexTextElement,
   }
   return elementTypeMap[props.elementInfo.type] || null
 })

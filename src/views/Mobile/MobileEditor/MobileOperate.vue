@@ -65,7 +65,7 @@ const {
   textElementResizeHandlers,
 } = useCommonOperate(scaleWidth, scaleHeight)
 
-const resizeHandlers = props.elementInfo.type === 'text' || props.elementInfo.type === 'table' ? textElementResizeHandlers : _resizeHandlers
+const resizeHandlers = props.elementInfo.type === 'text' || props.elementInfo.type === 'latexText' || props.elementInfo.type === 'table' ? textElementResizeHandlers : _resizeHandlers
 
 const cannotRotate = computed(() => ['chart', 'video', 'audio'].includes(props.elementInfo.type))
 </script>

@@ -334,7 +334,7 @@ const execAI = async (command: string) => {
   if (!handleElement.value) return
 
   let content = ''
-  if (handleElement.value.type === 'text' && handleElement.value.content) {
+  if ((handleElement.value.type === 'text' || handleElement.value.type === 'latexText') && handleElement.value.content) {
     content = handleElement.value.content
   }
   if (handleElement.value.type === 'shape' && handleElement.value.text && handleElement.value.text.content) {

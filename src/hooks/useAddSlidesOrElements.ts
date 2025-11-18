@@ -67,7 +67,6 @@ export default () => {
     const slideIdMap = createSlideIdMap(slides)
     const newSlides = slides.map(slide => {
       const { groupIdMap, elIdMap } = createElementIdMap(slide.elements)
-
       for (const element of slide.elements) {
         element.id = elIdMap[element.id]
         if (element.groupId) element.groupId = groupIdMap[element.groupId]

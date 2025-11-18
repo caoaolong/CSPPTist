@@ -135,7 +135,6 @@ const {
 // 页面被切换时
 const thumbnailsRef = useTemplateRef<InstanceType<typeof Draggable>>('thumbnailsRef')
 watch(() => slideIndex.value, () => {
-
   // 清除多选状态的幻灯片
   if (selectedSlidesIndex.value.length) {
     mainStore.updateSelectedSlidesIndex([])

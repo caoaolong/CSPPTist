@@ -415,14 +415,15 @@ export default () => {
             }
             else if (el.type === 'math') {
               slide.elements.push({
-                type: 'image',
+                type: 'latexText',
                 id: nanoid(10),
-                src: el.picBase64,
+                defaultFontName: theme.value.fontName,
+                defaultColor: theme.value.fontColor,
+                content: `<p><latex>${el.latex}</latex></p>`,
                 width: el.width,
                 height: el.height,
                 left: el.left,
                 top: el.top,
-                fixedRatio: true,
                 rotate: 0,
               })
             }

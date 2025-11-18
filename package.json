@@ -47,6 +47,7 @@
     "svg-pathdata": "^7.1.0",
     "tinycolor2": "^1.6.0",
     "tippy.js": "^6.3.7",
+    "vatex": "^0.1.0",
     "vue": "^3.5.17",
     "vuedraggable": "^4.1.0"
   },
