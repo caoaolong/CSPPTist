@@ -27,7 +27,7 @@
                     }"
                 >
                     <template v-for="(part, index) in parsedContent" :key="index">
-                        <span v-if="part.type === 'text'" v-html="part.content"></span>
+                        <span v-if="part.type === 'text'" v-html="escapeHtmlAndNewlines(part.content)"></span>
                         <span v-else-if="part.type === 'markdown'" v-html="renderMarkdown(part.content)"></span>
                         <span v-else-if="part.type === 'latex-inline'" class="latex-inline">
                             <vue-latex :expression="part.content" :fontsize="getFontSize()" />
@@ -46,7 +46,7 @@
 import { computed } from 'vue'
 import type { PPTLatexTextElement } from '@/types/slides'
 import ElementOutline from '@/views/components/element/ElementOutline.vue'
-import { parseLatexText } from '@/utils/latexTextRenderer'
+import { parseLatexText, escapeHtmlAndNewlines } from '@/utils/latexTextRenderer'
 import { renderMarkdown } from '@/utils/markdownRenderer'
 
 import useElementShadow from '@/views/components/element/hooks/useElementShadow'

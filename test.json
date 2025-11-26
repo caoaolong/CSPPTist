@@ -1,0 +1,3023 @@
+{
+    "slides": [
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 0,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "_9djZq5J6h",
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "height": 562.5
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 281.25,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "6ueKLpfhNz",
+                    "type": "shape",
+                    "fill": "rgb(0, 49, 83)",
+                    "height": 281.25
+                },
+                {
+                    "rotate": 0,
+                    "top": 0,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "ntuqUShsxG",
+                    "filters": {
+                        "opacity": "15%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 168.92545666973214,
+                    "left": 68.85590705350602,
+                    "width": 862.2881858929879,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "CrixVIjAGr",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">探索一元二次函数的奥秘</span></span></span></p>",
+                    "height": 92
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 331.14772727272725,
+                    "left": 351.36363636363626,
+                    "width": 604.8484848484849,
+                    "vertical": false,
+                    "textType": "content",
+                    "id": "9BfONFgFua",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(227, 199, 159);\">九年级数学专题教学</span></span></p>",
+                    "height": 68
+                },
+                {
+                    "top": 315.71969696969694,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 760.8787878787878,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        183.33333333333348,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "XxCcfmEnD1",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "test-slide-3",
+            "type": "cover"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": 0,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "7AQtKxkNc9",
+                    "filters": {
+                        "blur": "2px",
+                        "opacity": "20%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "keypoints": [
+                        0.04052511415525115
+                    ],
+                    "path": "M 7.527980444709153 0 L 178.23288912050822 0 Q 185.76086956521738 0 185.76086956521738 7.527980444709153 L 185.76086956521738 468.55897607702997 Q 185.76086956521738 476.0869565217391 178.23288912050822 476.0869565217391 L 7.527980444709153 476.0869565217391 Q 0 476.0869565217391 0 468.55897607702997 L 0 7.527980444709153 Q 0 0 7.527980444709153 0 Z",
+                    "top": 43.20652173913049,
+                    "viewBox": [
+                        185.76086956521738,
+                        476.0869565217391
+                    ],
+                    "left": 42.934782608695684,
+                    "pathFormula": "roundRect",
+                    "width": 185.76086956521738,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "azreVWngSt",
+                    "opacity": 0.8,
+                    "height": 476.0869565217391
+                },
+                {
+                    "rotate": 0,
+                    "shadow": {
+                        "color": "rgb(128, 128, 128)",
+                        "v": 2,
+                        "h": 2,
+                        "blur": 2
+                    },
+                    "vertical": false,
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 72px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">目</span></span></span></p><p style=\"text-align: center;\"><span style=\"font-size: 72px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">录</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 72.69327894327893,
+                    "left": 68.9113965744401,
+                    "width": 133.8076416337286,
+                    "lineHeight": 1,
+                    "id": "m941hAXMUy",
+                    "defaultFontName": "",
+                    "height": 169
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "w2cF_Jk5k-",
+                    "vertical": false,
+                    "textType": "itemNumber",
+                    "type": "text",
+                    "content": "<p style=\"\"><strong><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">01</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 43.43069613135407,
+                    "left": 271.2450592885375,
+                    "width": 78.03030303030303,
+                    "id": "YMGWj6PuP_",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "w2cF_Jk5k-",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"\"><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">什么是一元二次函数？</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 43.43069613135407,
+                    "left": 349.2753623188405,
+                    "width": 540.1926699362516,
+                    "id": "JDI8wo38uj",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "top": 107.82075052140846,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 281.8181818181818,
+                    "groupId": "w2cF_Jk5k-",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        588.6363636363637,
+                        0
+                    ],
+                    "style": "dashed",
+                    "id": "3oaPEbvZx9",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 243.69327894327893,
+                    "left": 98.81521739130437,
+                    "width": 74.796875,
+                    "vertical": true,
+                    "id": "YjneAnDKjR",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "opacity": 0.9,
+                    "content": "<p style=\"\"><span style=\"font-size: 36px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">CONTENTS</span></span></span></p>",
+                    "height": 231.98287220026344
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "908XJsWRLl",
+                    "vertical": false,
+                    "textType": "itemNumber",
+                    "type": "text",
+                    "content": "<p style=\"\"><strong><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">02</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 125.68040680080158,
+                    "left": 271.2450592885375,
+                    "width": 78.03030303030303,
+                    "id": "4OoDgKoSZt",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "908XJsWRLl",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"\"><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">一元二次函数的标准形式</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 125.68040680080158,
+                    "left": 349.2753623188405,
+                    "width": 540.1926699362516,
+                    "id": "yGL5n29vuw",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "top": 190.07046119085595,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 281.8181818181818,
+                    "groupId": "908XJsWRLl",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        588.6363636363637,
+                        0
+                    ],
+                    "style": "dashed",
+                    "id": "itdBqCiVnh",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "Luq79QJU55",
+                    "vertical": false,
+                    "textType": "itemNumber",
+                    "type": "text",
+                    "content": "<p style=\"\"><strong><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">03</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 207.93011747024906,
+                    "left": 271.2450592885375,
+                    "width": 78.03030303030303,
+                    "id": "fbB2mwA2fX",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "Luq79QJU55",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"\"><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">抛物线的图像与性质</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 207.93011747024906,
+                    "left": 349.2753623188405,
+                    "width": 540.1926699362516,
+                    "id": "Aa7vtkq4YT",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "top": 272.32017186030345,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 281.8181818181818,
+                    "groupId": "Luq79QJU55",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        588.6363636363637,
+                        0
+                    ],
+                    "style": "dashed",
+                    "id": "RxtIf0nTP8",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "fGKGKu5_B3",
+                    "vertical": false,
+                    "textType": "itemNumber",
+                    "type": "text",
+                    "content": "<p style=\"\"><strong><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">04</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 290.17982813969655,
+                    "left": 271.2450592885375,
+                    "width": 78.03030303030303,
+                    "id": "pEE0LB0ZhJ",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "fGKGKu5_B3",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"\"><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">顶点、对称轴与开口方向</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 290.17982813969655,
+                    "left": 349.2753623188405,
+                    "width": 540.1926699362516,
+                    "id": "lnCihSUe9r",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "top": 354.56988252975094,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 281.8181818181818,
+                    "groupId": "fGKGKu5_B3",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        588.6363636363637,
+                        0
+                    ],
+                    "style": "dashed",
+                    "id": "hkLYXdjjg0",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "tuR5VJMWI2",
+                    "vertical": false,
+                    "textType": "itemNumber",
+                    "type": "text",
+                    "content": "<p style=\"\"><strong><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">05</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 372.42953880914405,
+                    "left": 271.2450592885375,
+                    "width": 78.03030303030303,
+                    "id": "HNARlsGqOo",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "tuR5VJMWI2",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"\"><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">一元二次函数的实际应用</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 372.42953880914405,
+                    "left": 349.2753623188405,
+                    "width": 540.1926699362516,
+                    "id": "YpoIeN9GZk",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "top": 436.81959319919844,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 281.8181818181818,
+                    "groupId": "tuR5VJMWI2",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        588.6363636363637,
+                        0
+                    ],
+                    "style": "dashed",
+                    "id": "A8lSFCajAm",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "neSjovE-JL",
+                    "vertical": false,
+                    "textType": "itemNumber",
+                    "type": "text",
+                    "content": "<p style=\"\"><strong><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">06</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 454.67924947859154,
+                    "left": 271.2450592885375,
+                    "width": 78.03030303030303,
+                    "id": "JnkWfujlEf",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "neSjovE-JL",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"\"><span style=\"font-size: 28px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">小结与练习</span></span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 454.67924947859154,
+                    "left": 349.2753623188405,
+                    "width": 540.1926699362516,
+                    "id": "zWnnI6duC6",
+                    "defaultFontName": "",
+                    "height": 62
+                },
+                {
+                    "top": 519.069303868646,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 281.8181818181818,
+                    "groupId": "neSjovE-JL",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        588.6363636363637,
+                        0
+                    ],
+                    "style": "dashed",
+                    "id": "xdIBNocSbl",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "txZ0VdSbsT",
+            "type": "contents"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": 0,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": -1.4210854715202004E-14,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "xBtPxS6HLF",
+                    "filters": {
+                        "opacity": "30%",
+                        "grayscale": "100%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "xwKfxHOoB5",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "FxVlHfHEkz",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "flipH": false,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.09461722488038,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 138,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "0TQqu8-Nkl",
+                    "height": 60.8
+                },
+                {
+                    "rotate": 0,
+                    "flipH": true,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.04679113792389,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.9,
+                    "width": 138.04347826086962,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "drRfl72xl2",
+                    "height": 60.828260869565185
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.87505200748905,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.91304347826088,
+                    "width": 194.44625026003746,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "S6FjdmHPW5",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "partNumber",
+                        "content": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 80px;\"><span style=\"color: rgb(133, 18, 15);\">01</span></span></strong></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.89461722488036,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 260.10661535261073,
+                    "width": 690.8933846473893,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "hDP2PniZXp",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "title",
+                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 40px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">过渡页标题</span></span></span></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 368.5522476119125,
+                    "left": 328.09070972886764,
+                    "width": 630.5163476874003,
+                    "vertical": false,
+                    "textType": "content",
+                    "id": "X3RgyMJGzy",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(227, 199, 159);\">理解基本定义与核心概念</span></span></p>",
+                    "height": 92
+                },
+                {
+                    "top": 347.71969696969694,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 614.6096491228069,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        333.60247208931435,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "0g4WndnVUX",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "x54krb10cP",
+            "type": "transition"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": -0.05000000000000426,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "_V1GZnRxR3",
+                    "filters": {
+                        "opacity": "50%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "keypoints": [
+                        0.20325591283573446
+                    ],
+                    "path": "M 106.1505771544644 0 L 962.878501024981 0 L 962.878501024981 416.1002920748713 Q 962.878501024981 522.2508692293356 856.7279238705166 522.2508692293356 L 0 522.2508692293356 L 0 106.1505771544644 Q 0 0 106.1505771544644 0 Z",
+                    "top": 20.124565385332147,
+                    "viewBox": [
+                        962.878501024981,
+                        522.2508692293356
+                    ],
+                    "left": 18.560749487509497,
+                    "pathFormula": "roundRectDiagonal",
+                    "width": 962.878501024981,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "njVc2u3fZP",
+                    "opacity": 0.8,
+                    "height": 522.2508692293356
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 35.35031382164139,
+                    "left": 56.92501598274819,
+                    "width": 896.1180701078688,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "O8smfc-hJ5",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 44px;\"><span style=\"font-family: LXGWWenKai;\">定义与基本概念</span></span></p>",
+                    "height": 86.796875
+                },
+                {
+                    "top": 122.1471888216414,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 802.0430530748868,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 4,
+                    "lock": true,
+                    "end": [
+                        138.5566188197767,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "czb_lZls6E",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "juxr35bl91",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">形如 $ y = ax^2 + bx + c $（其中 $ a \\neq 0 $，$ a, b, c $ 为常数）的函数叫做一元二次函数。</span></p>",
+                    "defaultColor": "#333",
+                    "top": 294.9532545853269,
+                    "left": 47.30377842598335,
+                    "width": 301.56623803827756,
+                    "id": "p4stIxOfTK",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "juxr35bl91",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">定义</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 244.9532545853269,
+                    "left": 47.30377842598335,
+                    "width": 301.56623803827756,
+                    "id": "jpKYkLNZ4E",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 294.9532545853269,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 172.16983205437253,
+                    "groupId": "juxr35bl91",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "pJVzdjV7Vb",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "JvtTw-eq6h",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">&lt;ul&gt;&lt;li&gt;“一元”：只有一个自变量 $ x $&lt;/li&gt;&lt;li&gt;“二次”：最高次项是 $ x^2 $&lt;/li&gt;&lt;/ul&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 294.9532545853269,
+                    "left": 349.2168809808612,
+                    "width": 301.56623803827756,
+                    "id": "bhIapcCv_n",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "JvtTw-eq6h",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">关键词解释</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 244.9532545853269,
+                    "left": 349.2168809808612,
+                    "width": 301.56623803827756,
+                    "id": "iZVGA8GEEf",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 294.9532545853269,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 474.0829346092504,
+                    "groupId": "JvtTw-eq6h",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "6p_RkpGuqW",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "7X1-T9xz-F",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">&lt;ul&gt;&lt;li&gt;$ y = x^2 $&lt;/li&gt;&lt;li&gt;$ y = -2x^2 + 3x - 1 $&lt;/li&gt;&lt;li&gt;$ y = \\frac{1}{2}x^2 + 4 $&lt;/li&gt;&lt;/ul&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 294.9532545853269,
+                    "left": 651.129983535739,
+                    "width": 301.56623803827756,
+                    "id": "12ZR1vC5Qe",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "7X1-T9xz-F",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">举例说明</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 244.95325458532693,
+                    "left": 651.129983535739,
+                    "width": 301.56623803827756,
+                    "id": "cSbvE8v4wt",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 294.9532545853269,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 775.9960371641284,
+                    "groupId": "7X1-T9xz-F",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "FcJRS7M7CW",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "LlLsvWYlh0",
+            "type": "content"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": 0,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": -1.4210854715202004E-14,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "xBtPxS6HLF",
+                    "filters": {
+                        "opacity": "30%",
+                        "grayscale": "100%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "xwKfxHOoB5",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "FxVlHfHEkz",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "flipH": false,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.09461722488038,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 138,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "0TQqu8-Nkl",
+                    "height": 60.8
+                },
+                {
+                    "rotate": 0,
+                    "flipH": true,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.04679113792389,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.9,
+                    "width": 138.04347826086962,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "drRfl72xl2",
+                    "height": 60.828260869565185
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.87505200748905,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.91304347826088,
+                    "width": 194.44625026003746,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "S6FjdmHPW5",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "partNumber",
+                        "content": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 80px;\"><span style=\"color: rgb(133, 18, 15);\">01</span></span></strong></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.89461722488036,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 260.10661535261073,
+                    "width": 690.8933846473893,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "hDP2PniZXp",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "title",
+                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 40px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">过渡页标题</span></span></span></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 368.5522476119125,
+                    "left": 328.09070972886764,
+                    "width": 630.5163476874003,
+                    "vertical": false,
+                    "textType": "content",
+                    "id": "X3RgyMJGzy",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(227, 199, 159);\">深入理解a, b, c的作用</span></span></p>",
+                    "height": 92
+                },
+                {
+                    "top": 347.71969696969694,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 614.6096491228069,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        333.60247208931435,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "0g4WndnVUX",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "x54krb10cP",
+            "type": "transition"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": -0.05000000000000426,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "8c7_QneXiJ",
+                    "filters": {
+                        "opacity": "50%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "keypoints": [
+                        0.20325591283573446
+                    ],
+                    "path": "M 106.1505771544644 0 L 962.878501024981 0 L 962.878501024981 416.1002920748713 Q 962.878501024981 522.2508692293356 856.7279238705166 522.2508692293356 L 0 522.2508692293356 L 0 106.1505771544644 Q 0 0 106.1505771544644 0 Z",
+                    "top": 20.124565385332147,
+                    "viewBox": [
+                        962.878501024981,
+                        522.2508692293356
+                    ],
+                    "left": 18.560749487509497,
+                    "pathFormula": "roundRectDiagonal",
+                    "width": 962.878501024981,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "2M2gr8YySb",
+                    "opacity": 0.8,
+                    "height": 522.2508692293356
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 35.35031382164139,
+                    "left": 56.92501598274819,
+                    "width": 896.1180701078688,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "brUz0gDlxz",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 44px;\"><span style=\"font-family: LXGWWenKai;\">标准形式解析</span></span></p>",
+                    "height": 86.796875
+                },
+                {
+                    "top": 122.1471888216414,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 802.0430530748868,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 4,
+                    "lock": true,
+                    "end": [
+                        138.5566188197767,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "d2DF4CXEf6",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "RnK9r3E5-V",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: #000000;\">$ y = ax^2 + bx + c $</span></p>",
+                    "defaultColor": "#333",
+                    "top": 292.9596341706538,
+                    "left": 115.44893839712918,
+                    "width": 341.4386463317385,
+                    "id": "t5emI4faDg",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "RnK9r3E5-V",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">标准形式</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 242.95963417065386,
+                    "left": 115.44893839712918,
+                    "width": 341.4386463317385,
+                    "id": "vzU2H67_JP",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 293.5490400201776,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 260.25119617224885,
+                    "groupId": "RnK9r3E5-V",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "uJLAABmTU4",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "SptAedmikd",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: #000000;\">&lt;ul&gt;&lt;li&gt;&lt;strong&gt;a&lt;/strong&gt;：决定抛物线的开口方向和宽窄&lt;ul&gt;&lt;li&gt;$ a &gt; 0 $：开口向上&lt;/li&gt;&lt;li&gt;$ a &lt; 0 $：开口向下&lt;/li&gt;&lt;li&gt;|a| 越大，开口越窄&lt;/li&gt;&lt;/ul&gt;&lt;/li&gt;&lt;li&gt;&lt;strong&gt;b&lt;/strong&gt; 和 &lt;strong&gt;c&lt;/strong&gt;：影响图像的位置（后续深入）&lt;/li&gt;&lt;/ul&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 292.9596341706538,
+                    "left": 543.1124152711324,
+                    "width": 341.4386463317385,
+                    "id": "6c8YyUZPbp",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "SptAedmikd",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">各系数的作用</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 242.95963417065386,
+                    "left": 543.1124152711324,
+                    "width": 341.4386463317385,
+                    "id": "OsrPelfSXY",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 293.5490400201776,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 687.914673046252,
+                    "groupId": "SptAedmikd",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "DRzKWJZO1C",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "aI0z7IKqEu",
+            "type": "content"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": 0,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": -1.4210854715202004E-14,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "xBtPxS6HLF",
+                    "filters": {
+                        "opacity": "30%",
+                        "grayscale": "100%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "xwKfxHOoB5",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "FxVlHfHEkz",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "flipH": false,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.09461722488038,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 138,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "0TQqu8-Nkl",
+                    "height": 60.8
+                },
+                {
+                    "rotate": 0,
+                    "flipH": true,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.04679113792389,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.9,
+                    "width": 138.04347826086962,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "drRfl72xl2",
+                    "height": 60.828260869565185
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.87505200748905,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.91304347826088,
+                    "width": 194.44625026003746,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "S6FjdmHPW5",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "partNumber",
+                        "content": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 80px;\"><span style=\"color: rgb(133, 18, 15);\">01</span></span></strong></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.89461722488036,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 260.10661535261073,
+                    "width": 690.8933846473893,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "hDP2PniZXp",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "title",
+                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 40px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">过渡页标题</span></span></span></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 368.5522476119125,
+                    "left": 328.09070972886764,
+                    "width": 630.5163476874003,
+                    "vertical": false,
+                    "textType": "content",
+                    "id": "X3RgyMJGzy",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(227, 199, 159);\">从列表描点到图像特征</span></span></p>",
+                    "height": 92
+                },
+                {
+                    "top": 347.71969696969694,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 614.6096491228069,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        333.60247208931435,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "0g4WndnVUX",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "x54krb10cP",
+            "type": "transition"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": -0.05000000000000426,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "_V1GZnRxR3",
+                    "filters": {
+                        "opacity": "50%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "keypoints": [
+                        0.20325591283573446
+                    ],
+                    "path": "M 106.1505771544644 0 L 962.878501024981 0 L 962.878501024981 416.1002920748713 Q 962.878501024981 522.2508692293356 856.7279238705166 522.2508692293356 L 0 522.2508692293356 L 0 106.1505771544644 Q 0 0 106.1505771544644 0 Z",
+                    "top": 20.124565385332147,
+                    "viewBox": [
+                        962.878501024981,
+                        522.2508692293356
+                    ],
+                    "left": 18.560749487509497,
+                    "pathFormula": "roundRectDiagonal",
+                    "width": 962.878501024981,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "njVc2u3fZP",
+                    "opacity": 0.8,
+                    "height": 522.2508692293356
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 35.35031382164139,
+                    "left": 56.92501598274819,
+                    "width": 896.1180701078688,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "O8smfc-hJ5",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 44px;\"><span style=\"font-family: LXGWWenKai;\">绘制简单抛物线</span></span></p>",
+                    "height": 86.796875
+                },
+                {
+                    "top": 122.1471888216414,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 802.0430530748868,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 4,
+                    "lock": true,
+                    "end": [
+                        138.5566188197767,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "czb_lZls6E",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "juxr35bl91",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">$ y = x^2 $</span></p>",
+                    "defaultColor": "#333",
+                    "top": 294.9532545853269,
+                    "left": 47.30377842598335,
+                    "width": 301.56623803827756,
+                    "id": "p4stIxOfTK",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "juxr35bl91",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">示例函数</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 244.9532545853269,
+                    "left": 47.30377842598335,
+                    "width": 301.56623803827756,
+                    "id": "jpKYkLNZ4E",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 294.9532545853269,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 172.16983205437253,
+                    "groupId": "juxr35bl91",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "pJVzdjV7Vb",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "JvtTw-eq6h",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;x&lt;/th&gt;&lt;th&gt;-2&lt;/th&gt;&lt;th&gt;-1&lt;/th&gt;&lt;th&gt;0&lt;/th&gt;&lt;th&gt;1&lt;/th&gt;&lt;th&gt;2&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td&gt;y&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;td&gt;1&lt;/td&gt;&lt;td&gt;4&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 294.9532545853269,
+                    "left": 349.2168809808612,
+                    "width": 301.56623803827756,
+                    "id": "bhIapcCv_n",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "JvtTw-eq6h",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">列表描点法</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 244.9532545853269,
+                    "left": 349.2168809808612,
+                    "width": 301.56623803827756,
+                    "id": "iZVGA8GEEf",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 294.9532545853269,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 474.0829346092504,
+                    "groupId": "JvtTw-eq6h",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "6p_RkpGuqW",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "7X1-T9xz-F",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">&lt;ul&gt;&lt;li&gt;形状像“U”或倒“U”&lt;/li&gt;&lt;li&gt;关于某条竖直线对称 → 对称轴&lt;/li&gt;&lt;/ul&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 294.9532545853269,
+                    "left": 651.129983535739,
+                    "width": 301.56623803827756,
+                    "id": "12ZR1vC5Qe",
+                    "defaultFontName": "",
+                    "height": 140
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "7X1-T9xz-F",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">图像特征</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 244.95325458532693,
+                    "left": 651.129983535739,
+                    "width": 301.56623803827756,
+                    "id": "cSbvE8v4wt",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 294.9532545853269,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 775.9960371641284,
+                    "groupId": "7X1-T9xz-F",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "FcJRS7M7CW",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "LlLsvWYlh0",
+            "type": "content"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": 0,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": -1.4210854715202004E-14,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "xBtPxS6HLF",
+                    "filters": {
+                        "opacity": "30%",
+                        "grayscale": "100%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "xwKfxHOoB5",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 44.04679113792386,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "FxVlHfHEkz",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "flipH": false,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.09461722488038,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 138,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "0TQqu8-Nkl",
+                    "height": 60.8
+                },
+                {
+                    "rotate": 0,
+                    "flipH": true,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 44.04679113792389,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.9,
+                    "width": 138.04347826086962,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "drRfl72xl2",
+                    "height": 60.828260869565185
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.87505200748905,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.91304347826088,
+                    "width": 194.44625026003746,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "S6FjdmHPW5",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "partNumber",
+                        "content": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 80px;\"><span style=\"color: rgb(133, 18, 15);\">01</span></span></strong></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 104.89461722488036,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 260.10661535261073,
+                    "width": 690.8933846473893,
+                    "lock": false,
+                    "fixedRatio": false,
+                    "id": "hDP2PniZXp",
+                    "text": {
+                        "defaultColor": "#333",
+                        "defaultFontName": "",
+                        "align": "middle",
+                        "type": "title",
+                        "content": "<p style=\"text-align: center;\"><span style=\"font-size: 40px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">过渡页标题</span></span></span></p>"
+                    },
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 368.5522476119125,
+                    "left": 328.09070972886764,
+                    "width": 630.5163476874003,
+                    "vertical": false,
+                    "textType": "content",
+                    "id": "X3RgyMJGzy",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(227, 199, 159);\">顶点、对称轴与开口方向的计算与判断</span></span></p>",
+                    "height": 92
+                },
+                {
+                    "top": 347.71969696969694,
+                    "color": "rgb(227, 199, 159)",
+                    "left": 614.6096491228069,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        333.60247208931435,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "0g4WndnVUX",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "x54krb10cP",
+            "type": "transition"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": -0.05000000000000426,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "Ta4FG_b2f0",
+                    "filters": {
+                        "opacity": "50%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "keypoints": [
+                        0.20325591283573446
+                    ],
+                    "path": "M 106.1505771544644 0 L 962.878501024981 0 L 962.878501024981 416.1002920748713 Q 962.878501024981 522.2508692293356 856.7279238705166 522.2508692293356 L 0 522.2508692293356 L 0 106.1505771544644 Q 0 0 106.1505771544644 0 Z",
+                    "top": 20.124565385332147,
+                    "viewBox": [
+                        962.878501024981,
+                        522.2508692293356
+                    ],
+                    "left": 18.560749487509497,
+                    "pathFormula": "roundRectDiagonal",
+                    "width": 962.878501024981,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "6qMxmfT_Bu",
+                    "opacity": 0.8,
+                    "height": 522.2508692293356
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 35.35031382164139,
+                    "left": 56.92501598274819,
+                    "width": 896.1180701078688,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "ATZmZEzyg5",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 44px;\"><span style=\"font-family: LXGWWenKai;\">顶点、对称轴与开口</span></span></p>",
+                    "height": 86.796875
+                },
+                {
+                    "top": 122.1471888216414,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 802.0430530748868,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 4,
+                    "lock": true,
+                    "end": [
+                        138.5566188197767,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "k3EaDyNwv9",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "uJzzVj4HiF",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">$ x = -\\frac{b}{2a} $</span></p>",
+                    "defaultColor": "#333",
+                    "top": 191.27861343700155,
+                    "left": 56.92501598274819,
+                    "width": 345.4258871610845,
+                    "id": "zevthBrPsO",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "uJzzVj4HiF",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">对称轴公式</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 143.27861343700155,
+                    "left": 56.92501598274819,
+                    "width": 345.4258871610846,
+                    "id": "0vPMSf-EJw",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 191.27861343700152,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 203.72089417254082,
+                    "groupId": "uJzzVj4HiF",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "SuNMyGmu0Y",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "pn1EgqRrYY",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">$ \\left( -\\frac{b}{2a},\\ f\\left(-\\frac{b}{2a}\\right) \\right) $</span></p>",
+                    "defaultColor": "#333",
+                    "top": 191.27861343700158,
+                    "left": 424.0980367991891,
+                    "width": 345.4258871610845,
+                    "id": "g9ymvGxKTz",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "pn1EgqRrYY",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">顶点坐标</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 143.27861343700158,
+                    "left": 424.0980367991891,
+                    "width": 345.4258871610846,
+                    "id": "yYsH6gMqGm",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 191.27861343700158,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 570.8939149889841,
+                    "groupId": "pn1EgqRrYY",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "Xc_pnonNiK",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "fGALP4bpEx",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">&lt;ul&gt;&lt;li&gt;$ a &gt; 0 $：顶点为最低点（最小值）&lt;/li&gt;&lt;li&gt;$ a &lt; 0 $：顶点为最高点（最大值）&lt;/li&gt;&lt;/ul&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 380.7044507575757,
+                    "left": 229.63795956329048,
+                    "width": 345.4258871610845,
+                    "id": "9qv1Xazw2R",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "fGALP4bpEx",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">开口方向回顾</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 332.7044507575757,
+                    "left": 229.63795956329048,
+                    "width": 345.4258871610846,
+                    "id": "Zd3MqS0V54",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 380.70445075757567,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 376.43383775308314,
+                    "groupId": "fGALP4bpEx",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "8mzpKQkj_-",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "X2GKNDvvPp",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "latexText",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">判断下列函数开口方向并找出对称轴&lt;ul&gt;&lt;li&gt;$ y = 2x^2 - 4x + 1 $&lt;/li&gt;&lt;li&gt;$ y = -x^2 + 6x - 5 $&lt;/li&gt;&lt;/ul&gt;</span></p>",
+                    "defaultColor": "#333",
+                    "top": 380.7044507575757,
+                    "left": 596.8109803797314,
+                    "width": 345.4258871610845,
+                    "id": "xHNapTCZs_",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "X2GKNDvvPp",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">互动小练习</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 332.7044507575757,
+                    "left": 596.8109803797314,
+                    "width": 345.4258871610846,
+                    "id": "x8ixdhMTZc",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 380.7044507575757,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 743.6068585695265,
+                    "groupId": "X2GKNDvvPp",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "5kJFgScnoW",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "kfRcP92n6-",
+            "type": "content"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "groupId": "0Frh6WP4m6",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 68.64308300395257,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "_CfxZtWW1z",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "0Frh6WP4m6",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 68.64308300395257,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "NyR4ILzt8T",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "0Frh6WP4m6",
+                    "flipH": false,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 68.69090909090909,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 138,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "E--lEn___Q",
+                    "height": 60.8
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "0Frh6WP4m6",
+                    "flipH": true,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 68.6430830039526,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.9,
+                    "width": 138.04347826086962,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "X5seosgsH8",
+                    "height": 60.828260869565185
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "0Frh6WP4m6",
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "top": 129.47134387351775,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.91304347826088,
+                    "width": 902.1739130434783,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "W19T03AHc1",
+                    "opacity": 1,
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 187.31916996047428,
+                    "left": 72.40207067429648,
+                    "width": 855.195858651407,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "JWl9ON86sH",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">生活中的二次函数</span></span></span></p>",
+                    "height": 92
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 361.823778712391,
+                    "left": 188.10606060606062,
+                    "width": 623.7878787878788,
+                    "vertical": false,
+                    "textType": "content",
+                    "id": "v1QvlKQGX0",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 16px;\"><span style=\"color: rgb(227, 199, 159);\">探索二次函数在现实世界的应用</span></span></p>",
+                    "height": 92
+                },
+                {
+                    "rotate": 0,
+                    "shadow": {
+                        "color": "rgb(0, 49, 83)",
+                        "v": 3,
+                        "h": 3,
+                        "blur": 2
+                    },
+                    "vertical": false,
+                    "textType": "partNumber",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 96px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(227, 199, 159);\">01</span></span></span></strong></p>",
+                    "defaultColor": "#333",
+                    "top": 46.694034090909106,
+                    "left": 215.49762228260866,
+                    "width": 569.0047554347826,
+                    "id": "RdaasLkJ-k",
+                    "defaultFontName": "",
+                    "opacity": 1,
+                    "height": 165.59375
+                }
+            ],
+            "id": "LOb1vSDhOl",
+            "type": "transition"
+        },
+        {
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "rotate": 0,
+                    "top": -0.05000000000000426,
+                    "src": "https://images.pexels.com/photos/210588/pexels-photo-210588.jpeg",
+                    "left": 0,
+                    "width": 1000,
+                    "lock": true,
+                    "fixedRatio": true,
+                    "id": "Ta4FG_b2f0",
+                    "filters": {
+                        "opacity": "50%"
+                    },
+                    "type": "image",
+                    "imageType": "background",
+                    "height": 562.5
+                },
+                {
+                    "rotate": 0,
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "keypoints": [
+                        0.20325591283573446
+                    ],
+                    "path": "M 106.1505771544644 0 L 962.878501024981 0 L 962.878501024981 416.1002920748713 Q 962.878501024981 522.2508692293356 856.7279238705166 522.2508692293356 L 0 522.2508692293356 L 0 106.1505771544644 Q 0 0 106.1505771544644 0 Z",
+                    "top": 20.124565385332147,
+                    "viewBox": [
+                        962.878501024981,
+                        522.2508692293356
+                    ],
+                    "left": 18.560749487509497,
+                    "pathFormula": "roundRectDiagonal",
+                    "width": 962.878501024981,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "6qMxmfT_Bu",
+                    "opacity": 0.8,
+                    "height": 522.2508692293356
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 35.35031382164139,
+                    "left": 56.92501598274819,
+                    "width": 896.1180701078688,
+                    "vertical": false,
+                    "textType": "title",
+                    "id": "ATZmZEzyg5",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: right;\"><span style=\"font-size: 44px;\"><span style=\"font-family: LXGWWenKai;\">实际应用场景</span></span></p>",
+                    "height": 86.796875
+                },
+                {
+                    "top": 122.1471888216414,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 802.0430530748868,
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 4,
+                    "lock": true,
+                    "end": [
+                        138.5566188197767,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "k3EaDyNwv9",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "uJzzVj4HiF",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">篮球投掷轨迹、喷泉水柱</span></p>",
+                    "defaultColor": "#333",
+                    "top": 191.27861343700155,
+                    "left": 56.92501598274819,
+                    "width": 345.4258871610845,
+                    "id": "zevthBrPsO",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "uJzzVj4HiF",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">抛体运动</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 143.27861343700155,
+                    "left": 56.92501598274819,
+                    "width": 345.4258871610846,
+                    "id": "0vPMSf-EJw",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 191.27861343700152,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 203.72089417254082,
+                    "groupId": "uJzzVj4HiF",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "SuNMyGmu0Y",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "pn1EgqRrYY",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">利润最大化模型（成本与收益关系）</span></p>",
+                    "defaultColor": "#333",
+                    "top": 191.27861343700158,
+                    "left": 424.0980367991891,
+                    "width": 345.4258871610845,
+                    "id": "g9ymvGxKTz",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "pn1EgqRrYY",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">经济学</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 143.27861343700158,
+                    "left": 424.0980367991891,
+                    "width": 345.4258871610846,
+                    "id": "yYsH6gMqGm",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 191.27861343700158,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 570.8939149889841,
+                    "groupId": "pn1EgqRrYY",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "Xc_pnonNiK",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "fGALP4bpEx",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">拱桥、卫星天线的抛物面结构</span></p>",
+                    "defaultColor": "#333",
+                    "top": 380.7044507575757,
+                    "left": 229.63795956329048,
+                    "width": 345.4258871610845,
+                    "id": "9qv1Xazw2R",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "fGALP4bpEx",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">建筑设计</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 332.7044507575757,
+                    "left": 229.63795956329048,
+                    "width": 345.4258871610846,
+                    "id": "Zd3MqS0V54",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 380.70445075757567,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 376.43383775308314,
+                    "groupId": "fGALP4bpEx",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "8mzpKQkj_-",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "X2GKNDvvPp",
+                    "vertical": false,
+                    "textType": "item",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"color: rgb(0, 0, 0);\">你能想到生活中哪些现象可以用二次函数描述？</span></p>",
+                    "defaultColor": "#333",
+                    "top": 380.7044507575757,
+                    "left": 596.8109803797314,
+                    "width": 345.4258871610845,
+                    "id": "xHNapTCZs_",
+                    "defaultFontName": "",
+                    "height": 116
+                },
+                {
+                    "rotate": 0,
+                    "groupId": "X2GKNDvvPp",
+                    "vertical": false,
+                    "textType": "itemTitle",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 20px;\"><span style=\"color: #000000;\">课堂思考</span></span></p>",
+                    "defaultColor": "#333",
+                    "top": 332.7044507575757,
+                    "left": 596.8109803797314,
+                    "width": 345.4258871610846,
+                    "id": "x8ixdhMTZc",
+                    "defaultFontName": "",
+                    "height": 50
+                },
+                {
+                    "top": 380.7044507575757,
+                    "color": "rgb(30, 73, 123)",
+                    "left": 743.6068585695265,
+                    "groupId": "X2GKNDvvPp",
+                    "start": [
+                        0,
+                        0
+                    ],
+                    "width": 2,
+                    "end": [
+                        51.8341307814992,
+                        0
+                    ],
+                    "style": "solid",
+                    "id": "5kJFgScnoW",
+                    "type": "line",
+                    "points": [
+                        "",
+                        ""
+                    ]
+                }
+            ],
+            "id": "kfRcP92n6-",
+            "type": "content"
+        },
+        {
+            "id": "_Pvs4G5SFn",
+            "type": "end",
+            "background": {
+                "color": "rgb(0, 49, 83)",
+                "type": "solid"
+            },
+            "elements": [
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 159.55217391304348,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 0,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "eEZVH4pA62",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 108,
+                    "left": 215.4976222826087,
+                    "width": 569.0047554347826,
+                    "vertical": false,
+                    "id": "BrMaypI0AA",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><strong><span style=\"font-size: 96px;\"><span style=\"color: rgba(251, 188, 181, 0.52);\">THANKS</span></span></strong></p>",
+                    "height": 164
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 159.55217391304348,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 186.9565217391305,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "RzfeZmAC_a",
+                    "type": "shape",
+                    "fill": "rgba(199,170,129,1)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "flipH": false,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 159.6,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 813,
+                    "width": 138,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "a9ydjFomYZ",
+                    "height": 60.8
+                },
+                {
+                    "rotate": 0,
+                    "flipH": true,
+                    "type": "shape",
+                    "fill": "rgba(165,127,72,1)",
+                    "path": "M 0 0 L 0 200 L 200 200 Z",
+                    "top": 159.5521739130435,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.9,
+                    "width": 138.04347826086962,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "SuyNEWWuZs",
+                    "height": 60.828260869565185
+                },
+                {
+                    "path": "M 0 0 L 200 0 L 200 200 L 0 200 Z",
+                    "rotate": 0,
+                    "top": 220.38043478260866,
+                    "viewBox": [
+                        200,
+                        200
+                    ],
+                    "left": 48.91304347826088,
+                    "width": 902.1739130434783,
+                    "lock": true,
+                    "fixedRatio": false,
+                    "id": "knQ-2-I5Ql",
+                    "type": "shape",
+                    "fill": "rgb(227, 199, 159)",
+                    "height": 208.69565217391306
+                },
+                {
+                    "rotate": 0,
+                    "defaultColor": "#333",
+                    "top": 254.3298233695652,
+                    "left": 160.32608695652175,
+                    "width": 679.3478260869565,
+                    "vertical": false,
+                    "id": "q1W-RpjXKx",
+                    "defaultFontName": "",
+                    "type": "text",
+                    "content": "<p style=\"text-align: center;\"><span style=\"font-size: 80px;\"><span style=\"font-family: LXGWWenKai;\"><span style=\"color: rgb(133, 18, 15);\">感谢观看</span></span></span></p>",
+                    "height": 140.796875
+                }
+            ]
+        }
+    ],
+    "background": {
+        "color": "rgba(255,255,255,1)",
+        "gradient": {
+            "rotate": 0,
+            "type": "linear",
+            "colors": [
+                {
+                    "color": "rgba(228,228,228,1)",
+                    "pos": 0
+                },
+                {
+                    "color": "#fff",
+                    "pos": 100
+                }
+            ]
+        },
+        "type": "solid"
+    },
+    "elements": [
+        {
+            "rotate": 0,
+            "top": 0,
+            "src": "https://images.pexels.com/photos/207489/pexels-photo-207489.jpeg",
+            "left": 0,
+            "width": 1000,
+            "lock": true,
+            "fixedRatio": true,
+            "id": "Tc6pM4h6__",
+            "filters": {
+                "opacity": "15%"
+            },
+            "type": "image",
+            "imageType": "background",
+            "height": 562.5
+        },
+        {
+            "rotate": 0,
+            "gradient": {
+                "rotate": 0,
+                "type": "linear",
+                "colors": [
+                    {
+                        "color": "rgba(155,202,240,1)",
+                        "pos": 0
+                    },
+                    {
+                        "color": "#fff",
+                        "pos": 100
+                    }
+                ]
+            },
+            "type": "shape",
+            "fill": "rgba(155,202,240,1)",
+            "path": "M 100 0 A 50 50 0 1 1 100 200 A 50 50 0 1 1 100 0 Z",
+            "top": 181.24999999999997,
+            "viewBox": [
+                200,
+                200
+            ],
+            "left": 357.27272727272725,
+            "width": 200,
+            "lock": true,
+            "fixedRatio": false,
+            "id": "WpmU6LyOG_",
+            "opacity": 0.1,
+            "height": 200
+        },
+        {
+            "rotate": 0,
+            "gradient": {
+                "rotate": 0,
+                "type": "linear",
+                "colors": [
+                    {
+                        "color": "rgba(123,170,207,1)",
+                        "pos": 0
+                    },
+                    {
+                        "color": "#fff",
+                        "pos": 100
+                    }
+                ]
+            },
+            "flipH": true,
+            "type": "shape",
+            "fill": "rgba(155,202,240,1)",
+            "path": "M 100 0 A 50 50 0 1 1 100 200 A 50 50 0 1 1 100 0 Z",
+            "top": 275.096484375,
+            "viewBox": [
+                200,
+                200
+            ],
+            "left": -238.037109375,
+            "width": 500,
+            "lock": true,
+            "fixedRatio": false,
+            "id": "xavJtX030z",
+            "opacity": 0.3,
+            "height": 500
+        },
+        {
+            "rotate": 0,
+            "gradient": {
+                "rotate": 0,
+                "type": "linear",
+                "colors": [
+                    {
+                        "color": "rgba(148,199,241,1)",
+                        "pos": 0
+                    },
+                    {
+                        "color": "#fff",
+                        "pos": 100
+                    }
+                ]
+            },
+            "type": "shape",
+            "fill": "rgba(155,202,240,1)",
+            "path": "M 100 0 A 50 50 0 1 1 100 200 A 50 50 0 1 1 100 0 Z",
+            "top": -78.125,
+            "viewBox": [
+                200,
+                200
+            ],
+            "left": 770.4013671875,
+            "width": 500,
+            "lock": true,
+            "fixedRatio": false,
+            "id": "ZgUuNGWojT",
+            "opacity": 0.3,
+            "height": 500
+        },
+        {
+            "rotate": 0,
+            "gradient": {
+                "rotate": 0,
+                "type": "linear",
+                "colors": [
+                    {
+                        "color": "rgba(155,202,240,1)",
+                        "pos": 0
+                    },
+                    {
+                        "color": "#fff",
+                        "pos": 100
+                    }
+                ]
+            },
+            "type": "shape",
+            "fill": "rgba(155,202,240,1)",
+            "path": "M 100 0 A 50 50 0 1 1 100 200 A 50 50 0 1 1 100 0 Z",
+            "top": 181.2,
+            "viewBox": [
+                200,
+                200
+            ],
+            "left": 442.72727272727275,
+            "width": 200,
+            "lock": true,
+            "fixedRatio": false,
+            "id": "S7-0qrUoJn",
+            "opacity": 0.3,
+            "height": 200
+        },
+        {
+            "rotate": 0,
+            "defaultColor": "#333",
+            "top": 228.09648437499996,
+            "left": 39.18939393939395,
+            "width": 921.6212121212121,
+            "vertical": false,
+            "textType": "title",
+            "id": "Eg3UDjqUiO",
+            "defaultFontName": "",
+            "type": "text",
+            "content": "<p style=\"text-align: center;\"><span style=\"font-size: 48px;\"><span style=\"font-family: ZhuqueFangSong;\"><span style=\"color: rgb(40, 72, 112);\">封面页标题</span></span></span></p>",
+            "height": 94
+        },
+        {
+            "rotate": 0,
+            "defaultColor": "#333",
+            "top": 433.0964843750001,
+            "left": 336.19438415747265,
+            "width": 576.131373418285,
+            "vertical": false,
+            "textType": "content",
+            "id": "RBNfrIP7FL",
+            "defaultFontName": "",
+            "type": "text",
+            "content": "<p style=\"text-align: right;\"><span style=\"font-size: 16px;\"><span style=\"font-family: ZhuqueFangSong;\">模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文模板封面正文</span></span></p>",
+            "height": 92
+        },
+        {
+            "top": 228.09648437499996,
+            "color": "rgba(91,155,213,0.29)",
+            "left": 439.3939393939394,
+            "start": [
+                0,
+                0
+            ],
+            "width": 2,
+            "lock": true,
+            "end": [
+                121.21212121212125,
+                0
+            ],
+            "style": "solid",
+            "id": "gWiVkPFFZI",
+            "type": "line",
+            "points": [
+                "",
+                ""
+            ]
+        },
+        {
+            "top": 328.1737943769194,
+            "color": "rgba(91,155,213,0.29)",
+            "left": 439.3939393939394,
+            "start": [
+                0,
+                0
+            ],
+            "width": 2,
+            "lock": true,
+            "end": [
+                121.21212121212125,
+                0
+            ],
+            "style": "solid",
+            "id": "ZclCDiuvJo",
+            "type": "line",
+            "points": [
+                "",
+                ""
+            ]
+        },
+        {
+            "rotate": 0,
+            "defaultColor": "#333333",
+            "top": 379.09648437500005,
+            "left": 268.6363636363636,
+            "width": 81.06060606060605,
+            "lock": true,
+            "vertical": false,
+            "id": "BdPrffyOqh",
+            "defaultFontName": "ZhuqueFangSong",
+            "type": "text",
+            "content": "<p style=\"text-align: center;\"><span style=\"font-size: 120px;\"><span style=\"color: rgba(91, 155, 213, 0.29);\">“</span></span></p>",
+            "height": 200
+        },
+        {
+            "rotate": 0,
+            "defaultColor": "#333333",
+            "top": 381.25,
+            "left": 900.9621212121214,
+            "width": 81.06060606060605,
+            "lock": true,
+            "vertical": false,
+            "id": "S1IRxDCfQT",
+            "defaultFontName": "ZhuqueFangSong",
+            "type": "text",
+            "content": "<p style=\"text-align: center;\"><span style=\"font-size: 120px;\"><span style=\"color: rgba(91, 155, 213, 0.29);\">”</span></span></p>",
+            "height": 200
+        }
+    ],
+    "id": "FFi8VzdihU",
+    "type": "cover",
+    "title": "探索一元二次函数的奥秘"
+}
