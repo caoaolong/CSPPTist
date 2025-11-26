@@ -8,6 +8,7 @@
     "build": "run-p type-check \"build-only {@}\" --",
     "preview": "vite preview",
     "build-only": "vite build",
+    "build-preview": "vite build --mode preview",
     "type-check": "vue-tsc --build --force",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
     "prepare": "husky install"
@@ -26,6 +27,7 @@
     "hfmath": "^0.0.2",
     "html-to-image": "^1.11.13",
     "lodash": "^4.17.21",
+    "marked": "^17.0.1",
     "mitt": "^3.0.1",
     "nanoid": "^5.0.7",
     "number-precision": "^1.6.0",

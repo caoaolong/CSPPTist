@@ -158,7 +158,8 @@ onMounted(() => {
       editorRef.value.textContent = text
       htmlContent.value = props.value
     }
-  } else {
+  }
+  else {
     htmlContent.value = ''
   }
   

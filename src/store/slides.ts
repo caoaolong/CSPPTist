@@ -143,9 +143,16 @@ export const useSlidesStore = defineStore('slides', {
         if (slide.sectionTag) delete slide.sectionTag
       }
 
-      const addIndex = this.slideIndex + 1
-      this.slides.splice(addIndex, 0, ...slides)
-      this.slideIndex = addIndex
+      // 如果 slides 数组为空，直接插入到索引 0
+      if (this.slides.length === 0) {
+        this.slides.push(...slides)
+        this.slideIndex = 0
+      }
+      else {
+        const addIndex = this.slideIndex + 1
+        this.slides.splice(addIndex, 0, ...slides)
+        this.slideIndex = addIndex
+      }
     },
   
     updateSlide(props: Partial<Slide>, slideId?: string) {

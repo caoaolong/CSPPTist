@@ -1,7 +1,7 @@
 import axios from './config'
 
 // export const SERVER_URL = 'http://localhost:5000'
-export const SERVER_URL = (import.meta.env.MODE === 'development') ? '/api' : 'https://server.pptist.cn'
+export const SERVER_URL = '/api'
 
 interface ImageSearchPayload {
   query: string;
@@ -98,4 +98,44 @@ export default {
       }),
     })
   },
+
+  getPPTTemplate(templateId: string): Promise<any> {
+    return axios.get(`${SERVER_URL}/ai/tool-ppt-template/preview`, {
+      params: {
+        id: templateId,
+      },
+    })
+  },
+
+  listPPTTemplate(): Promise<any> {
+    return axios.get(`${SERVER_URL}/ai/tool-ppt-template/all`, {})
+  },
+
+  getPPTOutline(id: string): Promise<any> {
+    return axios.get(`${SERVER_URL}/ai/chat/message/get-by-id`, {
+      params: {
+        id,
+      },
+    })
+  },
+
+  createTask(contentId: number, templateId: string): Promise<any> {
+    return axios.post(`${SERVER_URL}/ai/ppt-task/create`, {
+      contentId,
+      templateId,
+    })
+  },
+
+  /**
+   * 使用 EventSource 创建 SSE 连接来接收任务生成流
+   * 注意：EventSource 只支持 GET 请求，所以通过 URL 参数传递 taskId
+   * 
+   * @param taskId 任务ID
+   * @returns EventSource 实例，需要调用者手动处理事件
+   */
+  runTask(taskId: number): EventSource {
+    // EventSource 只支持 GET 请求，所以通过 URL 参数传递 taskId
+    const url = `${SERVER_URL}/ai/ppt-task/generate-stream?taskId=${taskId}`
+    return new EventSource(url)
+  }
 }

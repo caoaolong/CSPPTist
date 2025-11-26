@@ -29,6 +29,7 @@
                 >
                     <template v-for="(part, index) in parsedContent" :key="index">
                         <span v-if="part.type === 'text'" v-html="part.content"></span>
+                        <span v-else-if="part.type === 'markdown'" v-html="renderMarkdown(part.content)"></span>
                         <span v-else-if="part.type === 'latex-inline'" class="latex-inline">
                             <vue-latex :expression="part.content" :fontsize="getFontSize()" />
                         </span>
@@ -70,6 +71,7 @@ import type { ContextmenuItem } from '@/components/Contextmenu/types'
 import useElementShadow from '@/views/components/element/hooks/useElementShadow'
 import useHistorySnapshot from '@/hooks/useHistorySnapshot'
 import { parseLatexText } from '@/utils/latexTextRenderer'
+import { renderMarkdown } from '@/utils/markdownRenderer'
 
 import ElementOutline from '@/views/components/element/ElementOutline.vue'
 import Modal from '@/components/Modal.vue'
@@ -238,6 +240,70 @@ watch(isHandleElement, () => {
             display: block;
             text-align: center;
             margin: 10px 0;
+        }
+        
+        // Markdown 样式
+        ::v-deep(h1), ::v-deep(h2), ::v-deep(h3), ::v-deep(h4), ::v-deep(h5), ::v-deep(h6) {
+            margin: 0.5em 0;
+            font-weight: bold;
+        }
+        
+        ::v-deep(p) {
+            margin: 0.5em 0;
+        }
+        
+        ::v-deep(ul), ::v-deep(ol) {
+            margin: 0.5em 0;
+            padding-left: 1.5em;
+        }
+        
+        ::v-deep(li) {
+            margin: 0.25em 0;
+        }
+        
+        ::v-deep(strong) {
+            font-weight: bold;
+        }
+        
+        ::v-deep(em) {
+            font-style: italic;
+        }
+        
+        ::v-deep(code) {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 0.1em 0.3em;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        ::v-deep(blockquote) {
+            border-left: 3px solid rgba(0, 0, 0, 0.2);
+            padding-left: 1em;
+            margin: 0.5em 0;
+        }
+        
+        // Markdown 表格样式
+        ::v-deep(table) {
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 100%;
+            margin: 0.5em 0;
+            display: table;
+            
+            th, td {
+                border: 1px solid rgba(0, 0, 0, 0.2);
+                padding: 0.5em;
+                text-align: left;
+            }
+            
+            th {
+                background-color: rgba(0, 0, 0, 0.05);
+                font-weight: bold;
+            }
+            
+            tr:nth-child(even) {
+                background-color: rgba(0, 0, 0, 0.02);
+            }
         }
     }
 
