@@ -39,6 +39,8 @@ export interface MainState {
   showMarkupPanel: boolean
   showImageLibPanel: boolean
   showAIPPTDialog: boolean
+  showStepWizard: boolean
+  isRegeneratingPPT: boolean
 }
 
 const nanoid = customAlphabet('0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz')
@@ -77,6 +79,8 @@ export const useMainStore = defineStore('main', {
     showMarkupPanel: false, // 打开类型标注面板
     showImageLibPanel: false, // 打开图片库面板
     showAIPPTDialog: false, // 打开AIPPT创建窗口
+    showStepWizard: false, // 显示步骤条窗口
+    isRegeneratingPPT: false, // 是否正在重新生成PPT
   }),
 
   getters: {
@@ -217,6 +221,14 @@ export const useMainStore = defineStore('main', {
 
     setAIPPTDialogState(show: boolean) {
       this.showAIPPTDialog = show
+    },
+
+    setStepWizardState(show: boolean) {
+      this.showStepWizard = show
+    },
+
+    setRegeneratingPPTState(isRegenerating: boolean) {
+      this.isRegeneratingPPT = isRegenerating
     },
   },
 })

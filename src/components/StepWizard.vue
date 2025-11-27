@@ -195,6 +195,18 @@ const outline = ref<OutlineData | null>(null)
 
 const loadOutlineContent = async () => {
   if (!props.outlineId || outlineFetched.value || outlineLoading.value) return
+  
+  // 如果已经通过 props 传入了有效的大纲内容（不是默认内容），就不再调用接口
+  const defaultContents = [
+    '# 欢迎使用 PPT 生成工具\n\n请按照以下步骤完成操作：\n\n1. 查看说明文档\n2. 选择模板\n3. 等待生成完成',
+    '# 欢迎使用 PPT 生成工具\n\n请按照以下步骤完成操作：\n\n## 第一步：查看说明\n\n本工具可以帮助您快速生成专业的 PPT 演示文稿。\n\n## 第二步：选择模板\n\n在模板列表中选择一个您喜欢的模板，每个模板都展示了第一页的预览效果。\n\n## 第三步：生成进度\n\n选择模板后，系统将自动生成您的 PPT，请耐心等待。\n\n---\n\n**提示**：您可以在第二步中选择不同的模板来查看预览效果。'
+  ]
+  if (props.markdownContent && !defaultContents.includes(props.markdownContent)) {
+    // outlineContent 会通过 watch 自动更新，这里只需要标记为已获取
+    outlineFetched.value = true
+    return
+  }
+  
   const outlineIdStr = String(props.outlineId)
   try {
     outlineLoading.value = true
@@ -218,10 +230,27 @@ const loadOutlineContent = async () => {
 }
 
 watch(() => props.markdownContent, (val) => {
-  if (!outlineFetched.value && val) {
-    outlineContent.value = val
+  // 如果 markdownContent 有值，就更新 outlineContent
+  if (val) {
+    // 定义可能的默认内容（App.vue 和 StepWizard 的默认内容可能不同）
+    const defaultContents = [
+      '# 欢迎使用 PPT 生成工具\n\n请按照以下步骤完成操作：\n\n1. 查看说明文档\n2. 选择模板\n3. 等待生成完成',
+      '# 欢迎使用 PPT 生成工具\n\n请按照以下步骤完成操作：\n\n## 第一步：查看说明\n\n本工具可以帮助您快速生成专业的 PPT 演示文稿。\n\n## 第二步：选择模板\n\n在模板列表中选择一个您喜欢的模板，每个模板都展示了第一页的预览效果。\n\n## 第三步：生成进度\n\n选择模板后，系统将自动生成您的 PPT，请耐心等待。\n\n---\n\n**提示**：您可以在第二步中选择不同的模板来查看预览效果。'
+    ]
+    
+    // 检查是否是默认内容
+    const isDefaultContent = defaultContents.includes(val)
+    
+    // 如果内容不是默认内容，说明是从接口获取的新内容，总是更新
+    if (!isDefaultContent) {
+      outlineContent.value = val
+    }
+    else if (!outlineFetched.value) {
+      // 是默认内容，但还没有获取过，也更新
+      outlineContent.value = val
+    }
   }
-})
+}, { immediate: true })
 
 watch(() => props.outlineId, () => {
   outlineFetched.value = false
@@ -496,6 +525,25 @@ const nextStep = async () => {
     try {
       // 显示加载状态
       const loadingMessage = message.info('正在创建任务...', { duration: 0 })
+
+      // 如果没有 outline 数据，尝试获取
+      if (!outline.value || !outline.value.id) {
+        if (props.outlineId) {
+          try {
+            const outlineIdStr = String(props.outlineId)
+            const response = await api.getPPTOutline(outlineIdStr)
+            if (response && response?.data) {
+              outline.value = response.data
+            }
+          }
+          catch (err: any) {
+            loadingMessage.close()
+            const errorMsg = err?.message || '未知错误'
+            message.error(`获取大纲信息失败: ${errorMsg}`)
+            return
+          }
+        }
+      }
 
       if (!outline.value || !outline.value.id) {
         loadingMessage.close()

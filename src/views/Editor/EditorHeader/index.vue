@@ -3,7 +3,7 @@
     <div class="left">
       <Popover trigger="click" placement="bottom-start" v-model:value="mainMenuVisible">
         <template #content>
-          <div class="main-menu">
+          <!-- <div class="main-menu">
             <div class="ai-menu" @click="openAIPPTDialog(); mainMenuVisible = false">
               <div class="icon"><IconClick theme="two-tone" :fill="['#ffc158', '#fff']" /></div>
               <div class="aippt-content">
@@ -11,9 +11,9 @@
                 <div class="aippt-subtitle">输入一句话，智能生成演示文稿</div>
               </div>
             </div>
-          </div>
-          <Divider :margin="10" />
-          <div class="import-section">
+          </div> -->
+          <!-- <Divider :margin="10" /> -->
+          <!-- <div class="import-section">
             <div class="import-label">导入文件</div>
             <div class="import-grid">
               <FileInput class="import-block" accept="application/vnd.openxmlformats-officedocument.presentationml.presentation" @change="files => {
@@ -41,8 +41,8 @@
                 <span class="sub-label">（专属格式）</span>
               </FileInput>
             </div>
-          </div>
-          <Divider :margin="10" />
+          </div> -->
+          <!-- <Divider :margin="10" /> -->
           <PopoverMenuItem class="popover-menu-item" @click="setDialogForExport('pptx')"><IconDownload class="icon" /> 导出文件</PopoverMenuItem>
           <Divider :margin="10" />
           <PopoverMenuItem class="popover-menu-item" @click="resetSlides(); mainMenuVisible = false"><IconRefresh class="icon" /> 重置幻灯片</PopoverMenuItem>
@@ -50,8 +50,8 @@
           <PopoverMenuItem class="popover-menu-item" @click="mainMenuVisible = false; hotkeyDrawerVisible = true"><IconCommand class="icon" /> 快捷操作</PopoverMenuItem>
           <PopoverMenuItem class="popover-menu-item" @click="goLink('https://github.com/pipipi-pikachu/PPTist/issues')"><IconComment class="icon" /> 意见反馈</PopoverMenuItem>
           <PopoverMenuItem class="popover-menu-item" @click="goLink('https://github.com/pipipi-pikachu/PPTist/blob/master/doc/Q&A.md')"><IconHelpcenter class="icon" /> 常见问题</PopoverMenuItem>
-          <Divider :margin="10" />
-          <div class="statement">注：本站仅作测试/演示，不提供任何形式的服务</div>
+          <!-- <Divider :margin="10" />
+          <div class="statement">注：本站仅作测试/演示，不提供任何形式的服务</div> -->
         </template>
         <div class="menu-item"><IconHamburgerButton class="icon" /></div>
       </Popover>
@@ -86,15 +86,18 @@
           <div class="arrow-btn"><IconDown class="arrow" /></div>
         </Popover>
       </div>
-      <div class="menu-item" v-tooltip="'AI生成PPT'" @click="openAIPPTDialog(); mainMenuVisible = false">
+      <!-- <div class="menu-item" v-tooltip="'AI生成PPT'" @click="openAIPPTDialog(); mainMenuVisible = false">
         <span class="text ai">AI</span>
+      </div> -->
+      <div class="menu-item" v-tooltip="'重新生成PPT'" @click="regeneratePPT">
+        <IconRefresh class="icon" />
       </div>
       <div class="menu-item" v-tooltip="'导出'" @click="setDialogForExport('pptx')">
         <IconDownload class="icon" />
       </div>
-      <a class="github-link" v-tooltip="'Copyright © 2020-PRESENT pipipi-pikachu'" href="https://github.com/pipipi-pikachu/PPTist" target="_blank">
+      <!-- <a class="github-link" v-tooltip="'Copyright © 2020-PRESENT pipipi-pikachu'" href="https://github.com/pipipi-pikachu/PPTist" target="_blank">
         <div class="menu-item"><IconGithub class="icon" /></div>
-      </a>
+      </a> -->
     </div>
 
     <Drawer
@@ -118,6 +121,7 @@ import useScreening from '@/hooks/useScreening'
 import useImport from '@/hooks/useImport'
 import useSlideHandler from '@/hooks/useSlideHandler'
 import type { DialogForExportTypes } from '@/types/export'
+import message from '@/utils/message'
 
 import HotkeyDoc from './HotkeyDoc.vue'
 import FileInput from '@/components/FileInput.vue'
@@ -168,6 +172,23 @@ const openMarkupPanel = () => {
 
 const openAIPPTDialog = () => {
   mainStore.setAIPPTDialogState(true)
+}
+
+// 重新生成PPT
+const regeneratePPT = () => {
+  // 获取URL参数中的outlineId
+  const urlParams = new URLSearchParams(window.location.search)
+  const outlineId = urlParams.get('outlineId')
+  
+  if (!outlineId) {
+    message.warning('未找到大纲ID，无法重新生成PPT')
+    return
+  }
+  
+  // 设置重新生成标志
+  mainStore.setRegeneratingPPTState(true)
+  // 显示步骤条
+  mainStore.setStepWizardState(true)
 }
 </script>
 

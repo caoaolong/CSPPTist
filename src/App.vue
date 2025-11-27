@@ -13,30 +13,19 @@
   <!-- 步骤条窗口 -->
   <Modal :visible="showStepWizard" :width="900" :closeOnClickMask="false" :closeOnEsc="false" closeButton
     @closed="handleStepWizardClose">
-    <StepWizard 
-      :markdownContent="markdownContent" 
-      :outline-id="outlineId || '1'" 
-      @complete="handleStepWizardComplete"
-      @close="showStepWizard = false" 
-      @stream-data="handleStreamData" 
-      @stream-complete="handleStreamComplete"
-      @stream-error="handleStreamError" 
-    />
+    <StepWizard :markdownContent="markdownContent" :outline-id="outlineId || '1'" @complete="handleStepWizardComplete"
+      @close="() => { mainStore.setStepWizardState(false); mainStore.setRegeneratingPPTState(false) }" @stream-data="handleStreamData" @stream-complete="handleStreamComplete"
+      @stream-error="handleStreamError" />
   </Modal>
 
   <!-- PPT 生成中的 loading 效果 -->
-  <FullscreenSpin 
-    v-if="isGeneratingPPT" 
-    :loading="true" 
-    :mask="true" 
-    tip="正在生成 PPT，请稍等 ..." 
-  />
+  <FullscreenSpin v-if="isGeneratingPPT" :loading="true" :mask="true" tip="正在生成 PPT，请稍等 ..." />
 </template>
 
 
 
 <script lang="ts" setup>
-import { onMounted, computed, ref, provide } from 'vue'
+import { onMounted, computed, ref, provide, watch } from 'vue'
 import { storeToRefs } from 'pinia'
 import { useScreenStore, useMainStore, useSnapshotStore, useSlidesStore } from '@/store'
 import { LOCALSTORAGE_KEY_DISCARDED_DB } from '@/configs/storage'
@@ -60,7 +49,7 @@ const _isPC = isPC()
 const mainStore = useMainStore()
 const slidesStore = useSlidesStore()
 const snapshotStore = useSnapshotStore()
-const { databaseId } = storeToRefs(mainStore)
+const { databaseId, showStepWizard, isRegeneratingPPT } = storeToRefs(mainStore)
 const { slides } = storeToRefs(slidesStore)
 const { screening } = storeToRefs(useScreenStore())
 
@@ -75,8 +64,6 @@ const outlineId = urlParams.get('outlineId')
 const hasUrlParams = computed(() => {
   return urlParams.toString().length > 0
 })
-
-const showStepWizard = ref(false)
 const markdownContent = ref(`# 欢迎使用 PPT 生成工具
 
 请按照以下步骤完成操作：
@@ -133,7 +120,7 @@ const loadTemplateData = (templateData: any) => {
 
 // 处理步骤条完成事件
 const handleStepWizardComplete = async (templateData?: any) => {
-  showStepWizard.value = false
+  mainStore.setStepWizardState(false)
 
   // 如果用户选择了模板，加载模板数据
   if (templateData) {
@@ -147,19 +134,29 @@ const handleStepWizardComplete = async (templateData?: any) => {
 
 // 处理步骤条关闭事件
 const handleStepWizardClose = () => {
-  showStepWizard.value = false
+  mainStore.setStepWizardState(false)
+  mainStore.setRegeneratingPPTState(false)
 }
 
 // 处理 SSE 流式数据
 const handleStreamData = (streamData: any) => {
   // eslint-disable-next-line no-console
   console.log('App.vue handleStreamData 被调用，收到数据:', streamData)
-  
+
   // 第一次收到流式数据时，显示 loading
   if (!isGeneratingPPT.value) {
     isGeneratingPPT.value = true
+    
+    // 如果是重新生成PPT，先清空当前PPT内容
+    if (isRegeneratingPPT.value) {
+      slidesStore.setSlides([])
+      slidesStore.updateSlideIndex(0)
+      mainStore.setActiveElementIdList([])
+      addHistorySnapshot()
+      mainStore.setRegeneratingPPTState(false)
+    }
   }
-  
+
   // 处理流式数据
   if (!streamData) {
     return
@@ -176,7 +173,7 @@ const handleStreamData = (streamData: any) => {
         try {
           // 先尝试解析一次
           const firstParse = JSON.parse(contentStr)
-          
+
           // 如果解析结果是字符串，说明是双重转义的 JSON，需要再解析一次
           if (typeof firstParse === 'string') {
             slideData = JSON.parse(firstParse)
@@ -190,7 +187,7 @@ const handleStreamData = (streamData: any) => {
           // 如果第一次解析失败，尝试其他方式
           // eslint-disable-next-line no-console
           console.warn('第一次 JSON 解析失败，尝试其他方式:', parseError)
-          
+
           // 尝试移除可能的转义字符
           try {
             const unescaped = contentStr.replace(/\\"/g, '"').replace(/\\\\/g, '\\')
@@ -275,10 +272,10 @@ const handleStreamComplete = () => {
 const handleStreamError = (error: any) => {
   // eslint-disable-next-line no-console
   console.error('流式数据传输错误:', error)
-  
+
   // 隐藏 loading
   isGeneratingPPT.value = false
-  
+
   message.error(`生成 PPT 时发生错误: ${error?.message || '未知错误'}`)
 }
 
@@ -333,24 +330,139 @@ const loadTemplate1 = async () => {
   }
 }
 
+// 加载PPT数据（从getTask接口返回的数据）
+const loadPPTData = (pptData: any) => {
+  // eslint-disable-next-line no-console
+  console.log(pptData)
+  try {
+    if (!pptData) {
+      throw new Error('PPT数据为空')
+    }
+
+    // 检查数据结构
+    if (!pptData.slides || !Array.isArray(pptData.slides)) {
+      throw new Error('PPT数据格式错误：缺少 slides 字段或 slides 不是数组')
+    }
+
+    const { slides: pptSlides } = pptData
+
+    // 检查 slides 是否为有效数组
+    if (!Array.isArray(pptSlides) || pptSlides.length === 0) {
+      throw new Error('PPT数据格式错误：slides 不是有效数组或为空')
+    }
+
+    // 如果有主题，设置主题
+    if (pptData.theme) {
+      slidesStore.setTheme(pptData.theme)
+    }
+
+    // 清空当前slides并加载新的PPT数据
+    slidesStore.setSlides(pptSlides)
+    slidesStore.updateSlideIndex(0)
+    addHistorySnapshot()
+  }
+  catch (err: any) {
+    const errorMsg = err?.message || '未知错误'
+    message.error(`无法加载PPT数据: ${errorMsg}`)
+    // 如果加载失败，显示步骤条
+    mainStore.setStepWizardState(true)
+  }
+}
+
 onMounted(async () => {
   // 预览模式下不需要初始化编辑器数据
   if (isPreviewMode.value) {
     return
   }
 
-  // 只有当有 URL 参数时才显示步骤条窗口
-  // 如果没有任何参数，直接显示主页面
-  if (hasUrlParams.value) {
-    showStepWizard.value = true
+  // 检查是否存在 outlineId
+  if (outlineId) {
+    try {
+      // 先调用 getTask 接口检查PPT是否已经生成
+      const response = await api.getTask(outlineId)
+      // 检查返回数据
+      // 接口可能返回格式：{ code: 0, data: {...}, msg: "" } 或直接返回 { data: {...} }
+      let taskData = null
+      if (response?.data) {
+        taskData = response.data
+      }
+      else if (response && typeof response === 'object' && 'data' in response) {
+        taskData = response
+      }
+
+      // 如果返回数据为空，调用 getPPTOutline 获取大纲内容
+      if (!taskData) {
+        try {
+          // 调用 getPPTOutline 接口获取大纲内容
+          const outlineResponse = await api.getPPTOutline(outlineId)
+          const content = outlineResponse?.content || outlineResponse?.data?.content
+          if (content) {
+            markdownContent.value = content
+          }
+        }
+        catch (outlineErr: any) {
+          // 如果获取大纲失败，使用默认内容
+          const errorMsg = outlineErr?.message || '未知错误'
+          message.warning(`获取大纲内容失败: ${errorMsg}，使用默认内容`)
+        }
+        // 显示步骤条
+        mainStore.setStepWizardState(true)
+      }
+      else {
+        // 如果返回数据不为空，加载PPT数据
+        loadPPTData(taskData)
+      }
+    }
+    catch (err: any) {
+      // 如果请求失败，尝试获取大纲内容
+      try {
+        const outlineResponse = await api.getPPTOutline(outlineId)
+        const content = outlineResponse?.content || outlineResponse?.data?.content
+        if (content) {
+          markdownContent.value = content
+        }
+      }
+      catch (outlineErr: any) {
+        // 如果获取大纲也失败，使用默认内容
+        const errorMsg = outlineErr?.message || '未知错误'
+        message.warning(`获取大纲内容失败: ${errorMsg}，使用默认内容`)
+      }
+      // 显示步骤条
+      const errorMsg = err?.message || '未知错误'
+      message.error(`检查PPT状态失败: ${errorMsg}`)
+      mainStore.setStepWizardState(true)
+    }
   }
+  // 如果没有 outlineId，但有其他 URL 参数，显示步骤条
+  else if (hasUrlParams.value) {
+    mainStore.setStepWizardState(true)
+  }
+  // 如果没有任何参数，加载默认模板
   else {
-    // 没有参数时，加载默认模板
     await loadTemplate1()
   }
 
   await deleteDiscardedDB()
   snapshotStore.initSnapshotDatabase()
+})
+
+// 监听步骤条显示状态，当显示时如果有outlineId则获取大纲内容
+watch(showStepWizard, async (visible) => {
+  if (visible && outlineId) {
+    try {
+      // 调用 getPPTOutline 接口获取大纲内容
+      const outlineResponse = await api.getPPTOutline(outlineId)
+      const content = outlineResponse?.content || outlineResponse?.data?.content
+      if (content) {
+        markdownContent.value = content
+      }
+    }
+    catch (err: any) {
+      // 如果获取大纲失败，使用默认内容
+      const errorMsg = err?.message || '未知错误'
+      message.warning(`获取大纲内容失败: ${errorMsg}，使用默认内容`)
+    }
+  }
 })
 
 // 应用注销时向 localStorage 中记录下本次 indexedDB 的数据库ID，用于之后清除数据库

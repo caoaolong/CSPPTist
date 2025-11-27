@@ -137,5 +137,13 @@ export default {
     // EventSource 只支持 GET 请求，所以通过 URL 参数传递 taskId
     const url = `${SERVER_URL}/ai/ppt-task/generate-stream?taskId=${taskId}`
     return new EventSource(url)
+  },
+
+  getTask(id: string) {
+    return axios.get(`${SERVER_URL}/ai/ppt-task/get-by-id`, {
+      params: {
+        id,
+      },
+    })
   }
 }
