@@ -124,7 +124,6 @@ import type { DialogForExportTypes } from '@/types/export'
 import message from '@/utils/message'
 
 import HotkeyDoc from './HotkeyDoc.vue'
-import FileInput from '@/components/FileInput.vue'
 import FullscreenSpin from '@/components/FullscreenSpin.vue'
 import Drawer from '@/components/Drawer.vue'
 import Input from '@/components/Input.vue'
@@ -136,7 +135,7 @@ const mainStore = useMainStore()
 const slidesStore = useSlidesStore()
 const { title } = storeToRefs(slidesStore)
 const { enterScreening, enterScreeningFromStart } = useScreening()
-const { importSpecificFile, importPPTXFile, importJSON, exporting } = useImport()
+const { exporting } = useImport()
 const { resetSlides } = useSlideHandler()
 
 const mainMenuVisible = ref(false)
@@ -170,9 +169,9 @@ const openMarkupPanel = () => {
   mainStore.setMarkupPanelState(true)
 }
 
-const openAIPPTDialog = () => {
-  mainStore.setAIPPTDialogState(true)
-}
+// const openAIPPTDialog = () => {
+//   mainStore.setAIPPTDialogState(true)
+// }
 
 // 重新生成PPT
 const regeneratePPT = () => {
