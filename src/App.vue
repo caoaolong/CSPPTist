@@ -289,10 +289,31 @@ if (import.meta.env.MODE !== 'development') {
   window.onbeforeunload = () => false
 }
 
-// 加载 template_1.json 文件（参考 importJSON 的逻辑）
+// 加载默认模板（从 listPPTTemplate 获取第一个模板）
 const loadTemplate1 = async () => {
   try {
-    const jsonData = await api.getMockData('template_1')
+    const response = await api.listPPTTemplate()
+
+    // 处理响应数据：接口返回格式为 { code: 0, data: [...], msg: "" }
+    let templateList: any[] = []
+
+    if (response) {
+      // 优先使用 response.data
+      if (response.data && Array.isArray(response.data)) {
+        templateList = response.data
+      }
+      // 兼容直接返回数组的情况
+      else if (Array.isArray(response)) {
+        templateList = response
+      }
+    }
+
+    // 获取第一个模板
+    if (templateList.length === 0) {
+      throw new Error('模板列表为空')
+    }
+
+    const jsonData = templateList[0]
 
     // 检查数据结构
     if (!jsonData || !jsonData.slides) {
@@ -326,7 +347,7 @@ const loadTemplate1 = async () => {
   }
   catch (err: any) {
     const errorMsg = err?.message || '未知错误'
-    message.error(`无法正确读取 / 解析 template_1.json 文件: ${errorMsg}`)
+    message.error(`无法加载默认模板: ${errorMsg}`)
   }
 }
 

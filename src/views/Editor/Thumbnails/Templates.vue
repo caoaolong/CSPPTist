@@ -82,17 +82,43 @@ const insertTemplates = (slides: Slide[]) => {
   emit('selectAll', slides)
 }
 
-const changeCatalog = (id: string) => {
+const changeCatalog = async (id: string) => {
   loading.value = true
   activeCatalog.value = id
-  api.getMockData(activeCatalog.value).then(ret => {
-    slides.value = ret.slides
-    loading.value = false
+  try {
+    const response = await api.listPPTTemplate()
 
-    if (listRef.value) listRef.value.scrollTo(0, 0) 
-  }).catch(() => {
+    // 处理响应数据：接口返回格式为 { code: 0, data: [...], msg: "" }
+    let templateList: any[] = []
+
+    if (response) {
+      // 优先使用 response.data
+      if (response.data && Array.isArray(response.data)) {
+        templateList = response.data
+      }
+      // 兼容直接返回数组的情况
+      else if (Array.isArray(response)) {
+        templateList = response
+      }
+    }
+
+    // 根据ID查找对应的模板
+    const template = templateList.find(t => t.id === id)
+    if (template && template.slides) {
+      slides.value = template.slides
+    }
+    else {
+      slides.value = []
+    }
+
+    if (listRef.value) listRef.value.scrollTo(0, 0)
+  }
+  catch (err) {
+    slides.value = []
+  }
+  finally {
     loading.value = false
-  })
+  }
 }
 
 onMounted(() => {

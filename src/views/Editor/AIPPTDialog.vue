@@ -242,7 +242,27 @@ const createPPT = async (template?: { slides: Slide[], theme: SlideTheme }) => {
   }
 
   let templateData = template
-  if (!templateData) templateData = await api.getMockData(selectedTemplate.value)
+  if (!templateData) {
+    // 从 listPPTTemplate 中查找对应的模板
+    const response = await api.listPPTTemplate()
+    
+    // 处理响应数据：接口返回格式为 { code: 0, data: [...], msg: "" }
+    let templateList: any[] = []
+
+    if (response) {
+      // 优先使用 response.data
+      if (response.data && Array.isArray(response.data)) {
+        templateList = response.data
+      }
+      // 兼容直接返回数组的情况
+      else if (Array.isArray(response)) {
+        templateList = response
+      }
+    }
+
+    // 根据 selectedTemplate.value 查找对应的模板
+    templateData = templateList.find(t => t.id === selectedTemplate.value)
+  }
   const templateSlides: Slide[] = templateData!.slides
   const templateTheme: SlideTheme = templateData!.theme
 
