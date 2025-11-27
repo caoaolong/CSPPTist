@@ -84,12 +84,12 @@ import useSlideHandler from '@/hooks/useSlideHandler'
 import useSectionHandler from '@/hooks/useSectionHandler'
 import useScreening from '@/hooks/useScreening'
 import useLoadSlides from '@/hooks/useLoadSlides'
-import useAddSlidesOrElements from '@/hooks/useAddSlidesOrElements'
-import type { Slide } from '@/types/slides'
+// import useAddSlidesOrElements from '@/hooks/useAddSlidesOrElements'
+// import type { Slide } from '@/types/slides'
 
 import ThumbnailSlide from '@/views/components/ThumbnailSlide/index.vue'
-import Templates from './Templates.vue'
-import Popover from '@/components/Popover.vue'
+// import Templates from './Templates.vue'
+// import Popover from '@/components/Popover.vue'
 import Draggable from 'vuedraggable'
 
 const mainStore = useMainStore()
@@ -103,25 +103,25 @@ const { slidesLoadLimit } = useLoadSlides()
 
 const selectedSlidesIndex = computed(() => [..._selectedSlidesIndex.value, slideIndex.value])
 
-const presetLayoutPopoverVisible = ref(false)
+// const presetLayoutPopoverVisible = ref(false)
 
 const hasSection = computed(() => {
   return slides.value.some(item => item.sectionTag)
 })
 
-const { addSlidesFromData } = useAddSlidesOrElements()
+// const { addSlidesFromData } = useAddSlidesOrElements()
 
 const {
   copySlide,
   pasteSlide,
   createSlide,
-  createSlideByTemplate,
+  // createSlideByTemplate,
   copyAndPasteSlide,
   deleteSlide,
   cutSlide,
   selectAllSlide,
   sortSlides,
-  isEmptySlide,
+  // isEmptySlide,
 } = useSlideHandler()
 
 const {
@@ -251,10 +251,10 @@ const saveSection = (e: FocusEvent | KeyboardEvent) => {
   mainStore.setDisableHotkeysState(false)
 }
 
-const insertAllTemplates = (slides: Slide[]) => {
-  if (isEmptySlide.value) slidesStore.setSlides(slides)
-  else addSlidesFromData(slides)
-}
+// const insertAllTemplates = (slides: Slide[]) => {
+//   if (isEmptySlide.value) slidesStore.setSlides(slides)
+//   else addSlidesFromData(slides)
+// }
 
 const contextmenusSection = (el: HTMLElement): ContextmenuItem[] => {
   const sectionId = el.dataset.sectionId!
