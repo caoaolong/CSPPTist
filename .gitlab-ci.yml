@@ -1,0 +1,75 @@
+# 具体使用说明请查看：https://wiki.colorstoneai.com/doc/gitlab-cicd-37cYTFSezH
+
+stages:
+  - build
+  - deploy
+build_node_job:
+  only:
+    - dev
+  stage: build
+  tags:
+    - node
+  # before_script:
+    # - npm config set registry https://mirrors.huaweicloud.com/repository/npm/
+  script:
+    - echo "安装依赖..."
+    - |
+      export NVM_DIR="$HOME/.nvm"
+      [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" 
+      [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
+    - nvm use 18
+    - npm config set registry https://mirrors.huaweicloud.com/repository/npm/
+    - npm -g install pnpm
+    - pnpm install
+    - echo "编译代码..."
+    - pnpm run build
+
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 2 weeks  # 默认30天，按需调整
+
+deploy_job_p1:
+  only:
+    - master
+  tags:
+    - node
+  # image: drillster/drone-rsync
+  stage: deploy
+  before_script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - cp -f "$SSH_PRIVATE_KEY" ~/.ssh/id_ed25519
+    - chmod 600 ~/.ssh/id_ed25519
+    # 添加目标服务器到已知主机列表
+    - ssh-keyscan $SSH_HOST_P1 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - echo "开始部署..."
+    - ssh root@$SSH_HOST_P1 "mkdir -p /apps/ai-class-backend-web/"
+    - rsync -avz --delete dist/ root@$SSH_HOST_P1:/apps/ai-class-backend-web/
+
+deploy_job_d2:
+  only:
+    - dev
+  tags:
+    - node
+  # image: drillster/drone-rsync
+  stage: deploy
+  before_script:
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+    - echo "$SSH_PRIVATE_KEY"
+    - cp -f "$SSH_PRIVATE_KEY" ~/.ssh/id_ed25519
+    - ls ~/.ssh/
+    - cat ~/.ssh/id_ed25519
+    - chmod 600 ~/.ssh/id_ed25519
+    # - ssh-add ~/.ssh/id_rsa
+    # 添加目标服务器到已知主机列表
+    # - cat ~/.ssh/known_hosts
+    - echo "$SSH_HOST_D1"
+    - ssh-keyscan $SSH_HOST_D1 >> ~/.ssh/known_hosts
+    - chmod 644 ~/.ssh/known_hosts
+  script:
+    - ssh root@$SSH_HOST_D1 "mkdir -p /apps/pptist/"
+    - rsync -avz --delete dist/ root@$SSH_HOST_D1:/apps/pptist/
